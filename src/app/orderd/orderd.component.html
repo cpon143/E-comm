@@ -1,1 +1,74 @@
-<p>orderd works!</p>
+<title>Order Successful</title>
+<style>
+    .hero-section {
+        background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ecf7, #79b3f4db, #69bff8cc, #52cffed9, #41dfff94, #46eefa24, #5ffbf100);
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tick-icon {
+        font-size: 64px;
+        color: green;
+        animation-name: tick;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .order-details {
+        text-align: center;
+        margin-top: 50px;
+        opacity: 0;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .cta-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 50px;
+        opacity: 0;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tick {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="hero-section">
+    <i class="tick-icon fas fa-check-circle"></i>
+    <h1>Order Successful!</h1>
+    <div class="order-details">
+        <p>Thank you for your purchase. Your order has been successfully processed.</p>
+        <p>Order ID: 123456</p>
+        <p>Estimated Delivery Date: 01/01/2024</p>
+        <a href="/" class="cta-button">Continue Shopping</a>
+    </div>
+</div>
+
+

@@ -94,6 +94,12 @@
   .category button {
     margin-top: 20px;
   }
+
+
+  .grid-item.text-center-category {
+    text-align: center;
+    /* You can add additional styling specific to the "text-center-category" class here */
+  }
   
   .newsletter {
     background-color: #fff;
