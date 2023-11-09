@@ -1,43 +1,29 @@
-.product-cotainer[_ngcontent-ng-c2488302704] {
+.product-cotainer {
   margin-top: 60px;
 }
 
-.page-container {
-    text-align: center;
-    padding: 20px;
-    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
-  }
-  
-  .landing-page {
-    /* background-image:url('/assets/image/homeC.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* width: 100%; */
-    min-height: 100vh;
-    padding: 50px;
-  }
 
 
-  .text-center{
+
+  /* .text-center{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  .btn-primary{
+  /* .btn-primary{
     background-color: #30a5ee;
     margin-top: 10px;
     color: #fff;
     border: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
-  }
+  } */
 
-  .btn-primary:hover {
+  /* .btn-primary:hover {
     background-color: #0896ee;
-  }
+  } */
 
   /* .card-text{
     text-align: justify;
@@ -136,5 +122,91 @@
       width: 100%;
     }
   }
+
+  /* ---------------------------------------------------- */
+
+  @media (min-width: 768px) {
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 16.66666667%;
+    }
+  }
+  
+.card {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+
+.card.mb-4 {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+
+.zoom-in {
+  transition: transform 0.5s;
+}
+
+.zoom-in:hover {
+  transform: scale(1.1);
+  object-fit:cover;
+}
+
+
+
+
+
  
   

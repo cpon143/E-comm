@@ -1,0 +1,72 @@
+<!-- FILEPATH: /D:/LPU/5th sem/INT219/Angular/E-comm/src/app/my-cart/my-cart.component.html -->
+
+<div class="cart-container">
+    <h1>My Cart</h1>
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="/assets/pro-imgs/OnePlus 11 5G.jpg" alt="Product Image">
+            <div class="item-details">
+                <h3>OnePlus 11 5G</h3>
+                <p class="card-text">1 Year Warranty <br>
+                    8 GB RAM | 256 GB ROM <br>
+                    16.64 cm (6.55 inch) Full HD+ Display</p>
+                    <p>Price: $899</p>
+                <div class="quantity">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity" min="1" max="10" value="1" oninput="updatePriceAndTotal(1)">
+                </div>
+            </div>
+            <button class="remove-item">Remove</button>
+        </div>
+        <div class="cart-item">
+            <img src="/assets/pro-imgs/OnePlus Nord CE 3 5G.jpg" alt="Product Image">
+            <div class ="item-details">
+                <h3 class="card-title">OnePlus Nord CE 3 5G</h3>
+                        <p class="card-text">1 Year Warranty <br>
+                            8 GB RAM | 256 GB ROM <br>
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                            <p>Price: $899</p>
+                <div class="quantity">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" name="quantity" min="1" max="10" value="1" oninput="updatePriceAndTotal(2)">
+                </div>
+            </div>
+            <button class="remove-item">Remove</button>
+        </div>
+    </div>
+    <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <div class="summary-item">
+            <p>Subtotal:</p>
+            <p id="subtotal">$1798.00</p>
+        </div>
+        <div class="summary-item">
+            <p>Shipping:</p>
+            <p>$5.00</p>
+        </div>
+        <div class="summary-item">
+            <p>Total:</p>
+            <p id="total">$1803.00</p>
+        </div>
+        <button class="checkout-button">Checkout</button>
+    </div>
+</div>
+
+<script>
+    function updatePriceAndTotal(id) {
+        const quantity = parseInt(document.getElementById(`quantity${id}`).value, 10);
+        const price = 10 * quantity;
+        document.getElementById(`price${id}`).innerHTML = `Price: $${price.toFixed(2)}`;
+        
+        // Calculate the new subtotal and update the total
+        const subtotal1 = parseFloat(document.getElementById('price1').textContent.split("$")[1]);
+        const subtotal2 = parseFloat(document.getElementById('price2').textContent.split("$")[1]);
+        
+        const subtotal = subtotal1 + subtotal2;
+        document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+        
+        const shipping = 5.00; // Assuming a fixed shipping cost
+        const total = subtotal + shipping;
+        document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+    }
+</script>

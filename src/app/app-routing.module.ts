@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
+import { MyCartComponent } from './my-cart/my-cart.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'my-cart', component: MyCartComponent },
   { path: 'forget-password', component: ForgetPasswordComponent }
   // Add the following route for the login button
   

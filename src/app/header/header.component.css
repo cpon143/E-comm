@@ -61,7 +61,10 @@ h1, .logo{
 }
 
 .nev-items a:hover {
-    color: #ff5733; /* An attractive hover color */
+    background: radial-gradient(circle, rgb(255, 80, 157) 0%, rgb(58, 140, 238) 100%);
+    background-clip: text; /* This property will apply the gradient as text color */
+    -webkit-background-clip: text; /* For webkit-based browsers (e.g., Chrome) */
+    color: transparent;
 }
 
 @media (max-width: 768px) {
