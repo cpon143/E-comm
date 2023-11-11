@@ -1,0 +1,125 @@
+<div class="product-cotainer">
+    <!-- Featured Products -->
+    <div class="container mt-4 ">
+        <h2 class="text-center">Featured Products</h2>
+        <div class="row ">
+
+            <div class="grid-cont">
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/Iphone.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Iphone</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <div class="quantity"></div>
+                    </div>
+                </div>
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/OnePlus 11 5G.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">OnePlus 11 5G</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/OnePlus Nord CE 3 5G.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">OnePlus Nord CE 3 5G</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/Realme C12.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Realme C12</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/Realme narzo N53.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Realme narzo N53</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-lr-1">
+                    <img src="/assets/pro-imgs/Redmi 12 5G Moonstone.jpg" class="card-img-top zoom-in" alt="Product 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Redmi 12 5G Moonstone</h3>
+                        <p class="card-text">1 Year Warranty
+                            8 GB RAM | 256 GB ROM
+                            16.64 cm (6.55 inch) Full HD+ Display</p>
+                        <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="container mt-5">
+        <h2 class="text-center">Shop by Category</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="category1.jpg" class="card-img-top" alt="Category 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Smart Watch</h3>
+                        <a class="btn btn-primary" routerLink="/signup">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="category2.jpg" class=" card-img-top" alt="Category 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Smart Phone</h3>
+                        <a class="btn btn-primary" routerLink="/signup">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="category3.jpg" class="card-img-top" alt="Category 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Smart Speaker</h3>
+                        <a class="btn btn-primary" routerLink="/signup">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container mt-5">
+    <h2 class="text-center">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-2" *ngFor="let product of products">
+            <div class="card mb-4">
+                <img src="{{product.imageUrl}}" class="card-img-top zoom-in" alt="{{product.name}}">
+                <div class="card-body">
+                    <h3 class="card-title">{{product.name}}</h3>
+                    <p class="card-text">{{product.description}}</p>
+                    <p class="card-text">{{product.price}}</p>
+                    <a class="btn btn-primary" routerLink="/signup">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
